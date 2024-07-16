@@ -35,7 +35,7 @@ protected:
 
 	struct cmp {
 
-		bool operator()(const Node* inst0, const Node* inst1) {
+		bool operator()(const Node* inst0, const Node* inst1) const {
 			const DBU pos0 = inst0->getPosition(X);
 			const DBU pos1 = inst1->getPosition(X);
 			if (pos0 == pos1)
